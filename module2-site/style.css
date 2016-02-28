@@ -1,3 +1,177 @@
+* {
+	box-sizing: border-box;
+}		
+
 h1 {
-	color: black;
+	text-align: center;
+	margin-top: 50px;
+}
+
+p {
+	background-color: gray;
+	height: 150px;
+	margin-top: 40px;
+	color: white;
+	overflow: hidden;
+}
+
+#row {
+	width: 100%;
+	margin-top: 50px;
+	font-family: Helvetica;
+}
+
+#p1, #p2, #p3 {
+	position: relative;
+	height: 200px;
+	background-color: gray;
+	border: 1px solid black;
+	float: left;
+	margin: 1%;
+}
+
+.small {
+	position: absolute;
+	border: 1px solid black;
+	text-align: center;
+	font-size: 1.5em;
+	height: 30px;
+	top: -1px;
+	right: -1px;
+}
+
+.s1 {
+	background-color: yellow;
+	width: 140px;
+}
+
+.s2 {
+	background-color: red;
+	color: white;
+	width: 145px;
+}
+
+.s3 {
+	background-color: blue;
+	width: 135px;
+}
+
+@media (min-width: 992px) {
+	#p1 {
+		width: 31%;
+		margin-right: 2%;
+	}
+	div #p1 p {
+		position: absolute;
+		width: 90%;
+		left: 20px;
+		top: -2px;
+		height: 145px;
+	}
+
+	#p2 {
+		width: 31%;
+		margin-right: 1%;
+	}
+
+	div #p2 p {
+		position: absolute;
+		width: 85%;
+		left: 20px;
+		top: -5px;
+		height: 162px;
+	}
+
+	#p3 {
+		width: 31%;
+		margin-right: 1%;	
+	}
+
+	div #p3 p {
+		position: absolute;
+		width: 85%;
+		left: 20px	;
+		top: -5px;
+		height: 162px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	#p1 {
+		width: 48%;
+	}
+
+	div #p1 p {
+		position: absolute;
+		width: 90%;
+		left: 20px;
+		top: -2px;
+		height: 159px;
+	}
+
+	#p2 {
+		width: 48%;
+	}
+
+	div #p2 p {
+		position: absolute;
+		width: 90%;
+		left: 20px;
+		top: -5px;
+		height: 162px;
+	}
+
+	#p3 {
+		width: 98%;
+		height: 200px;
+	}
+
+	div #p3 p {
+		position: absolute;
+		width: 97%;
+		left: 20px;
+		top: -5px;
+		height: 160px;
+	}
+}
+
+@media (max-width: 767px) {
+	#p1 {
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	div #p1 p {
+		position: absolute;
+		width: 93%;
+		left: 20px;
+		top: -2px;
+		height: 145px;
+	}
+
+	#p2 {
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	div #p2 p {
+		position: absolute;
+		width: 88%;
+		left: 20px;
+		top: -5px;
+		height: 162px;
+	}
+
+	#p3 {
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	div #p3 p {
+		position: absolute;
+		width: 88%;
+		left: 20px;
+		top: -5px;
+		height: 160px;
+	}
 }
