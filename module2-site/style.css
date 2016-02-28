@@ -7,6 +7,7 @@ h1 {
 	margin-top: 50px;
 }
 
+/*The gray boxes wich is inside of (Big)*/
 p {
 	background-color: gray;
 	height: 150px;
@@ -21,6 +22,7 @@ p {
 	font-family: Helvetica;
 }
 
+/*The gray boxes (Big)*/
 #p1, #p2, #p3 {
 	position: relative;
 	height: 200px;
@@ -30,6 +32,7 @@ p {
 	margin: 1%;
 }
 
+/* This is "Chicken", "Beef", "Fish" boxes */
 .small {
 	position: absolute;
 	border: 1px solid black;
@@ -56,11 +59,16 @@ p {
 	width: 135px;
 }
 
+/*Computer desktop*/
 @media (min-width: 992px) {
+
+/*Size of the gray box wich is inside of (Big)*/
 	#p1 {
 		width: 31%;
 		margin-right: 2%;
 	}
+
+/*Main text*/
 	div #p1 p {
 		position: absolute;
 		width: 90%;
@@ -96,11 +104,15 @@ p {
 	}
 }
 
+/*Tablet (IPad)*/
 @media (min-width: 768px) and (max-width: 991px) {
+
+/*Size of the gray box wich is inside of (Big)*/
 	#p1 {
 		width: 48%;
 	}
 
+/*Main text*/
 	div #p1 p {
 		position: absolute;
 		width: 90%;
@@ -135,12 +147,16 @@ p {
 	}
 }
 
+/*Phone (IPhone)*/
 @media (max-width: 767px) {
+
+/*Size of the gray box wich is inside of (Big)*/
 	#p1 {
 		width: 90%;
 		margin-left: 5%;
 	}
 
+/*Main text*/
 	div #p1 p {
 		position: absolute;
 		width: 93%;
